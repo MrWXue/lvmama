@@ -1,0 +1,10 @@
+//定义函数，循序媒体查询 @index记录循环次数，从1开始
+.getSize(@index) when (@index <= @len) {
+  @media (min-width:extract(@currentWidth,@index)) {
+    html {
+      font-size: extract(@currentWidth,@index) / @psdWidth * @bs;
+    }
+  }
+  .getSize(@index + 1);
+}
+.getSize(1);

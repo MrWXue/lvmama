@@ -1,0 +1,106 @@
+/*引入base基础样式*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑", sans-serif;
+  color: #222;
+}
+ul,
+ol,
+dl,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+  -webkit-tap-highlight-color: transparent;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+/*引入变量*/
+/*引入函数*/
+@media (min-width: 320px) {
+  html {
+    font-size: 7.125px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 8.015625px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 8.34960938px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 8.55px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 8.90625px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 9.21796875px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 9.440625px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 10.6875px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 12.0234375px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 14.25px;
+  }
+}
+/*版心*/
+.container {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+/*头部样式*/
+.index-header {
+  width: 100%;
+  height: 3.15789474rem;
+  background-color: #fe686c;
+}
